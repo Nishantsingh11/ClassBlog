@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import ArticalLIst from "./pages/ArticalLIst";
 import Navbar from "./pages/Navbar";
 import About from "./pages/About";
+import ArticalDeatiles from "./pages/ArticalDeatiles";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
    <Routes>
       <Route path="/" element={<Home />} />
       <Route path = "/artical" element = { < ArticalLIst />} /> 
+      <Route path = "/articaldetatil/:name" element =  { <ArticalDeatiles />} />
       <Route path = "/about" element = {<About />} />
    </Routes>
    </BrowserRouter>
